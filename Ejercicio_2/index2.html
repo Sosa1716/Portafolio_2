@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2 - Captura de Cámara</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Captura de Cámara</h1>
+
+    <div class="card">
+      <h2>Vista previa de la cámara</h2>
+      <video id="video" autoplay playsinline></video>
+      
+      <div class="buttons">
+        <button id="btn-start">Activar cámara</button>
+        <button id="btn-capture" disabled>Tomar foto</button>
+        <button id="btn-stop" disabled>Detener cámara</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Foto capturada</h2>
+      <canvas id="canvas"></canvas>
+      <p id="status" class="status">Esperando captura...</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

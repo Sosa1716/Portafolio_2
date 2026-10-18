@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3 - Notificaciones Locales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Notificaciones Locales</h1>
+
+    <div class="card">
+      <h2>Estado del permiso</h2>
+      <p id="permission-status">Consultando...</p>
+      <button id="btn-request">Solicitar permiso de notificaciones</button>
+    </div>
+
+    <div class="card">
+      <h2>Probar notificación</h2>
+      <p>Una vez que tengas el permiso, puedes disparar una notificación local desde el Service Worker.</p>
+      <button id="btn-notify" disabled>Mostrar notificación</button>
+      <button id="btn-cancel" disabled>Cerrar notificación</button>
+    </div>
+
+    <div class="card">
+      <h2>Estado del Service Worker</h2>
+      <p id="sw-status">Registrando...</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4 - IndexedDB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💾 IndexedDB - Persistencia Local</h1>
+
+    <!-- Formulario para agregar -->
+    <div class="card">
+      <h2>Agregar registro</h2>
+      <form id="form-add">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="number" id="edad" placeholder="Edad" min="1" max="120" required>
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+
+    <!-- Lista de registros -->
+    <div class="card">
+      <h2>Registros guardados</h2>
+      <button id="btn-refresh">Actualizar lista</button>
+      <ul id="lista"></ul>
+      <p id="empty-msg" class="empty">No hay registros todavía.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
